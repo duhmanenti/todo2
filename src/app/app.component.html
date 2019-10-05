@@ -6,9 +6,11 @@
        <option value="Alta">Alta</option>
        <option value="Média">Média</option>
        <option value="Baixa">Baixa</option>
-       <p *ngFor="let prioridade of newItem" *ngIf="newItem.priority == Alta" class="bg bg-alert">
-         {{}}
-
+       <p *ngFor="let prioridade of newItem" *ngIf="newItem.priority == Alta" class="bg bg-danger">
+       </p>
+      <p *ngFor="let prioridade of newItem" *ngIf="newItem.priority == Média" class="bg bg-warning">
+       </p>
+      <p *ngFor="let prioridade of newItem" *ngIf="newItem.priority == Baixa" class="bg bg-sucess">
        </p>
      </select>
    Data Limite da Tarefa
